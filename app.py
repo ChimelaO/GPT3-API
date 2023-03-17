@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 import config
 
-openai.api_key = config.apikey
+openai.api_key = st.secrets["apikey"]
 
 
 messages = [
